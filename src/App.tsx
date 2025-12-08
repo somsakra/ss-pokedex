@@ -18,7 +18,9 @@ function App() {
 
 
   return (
-    <RouterProvider router={router} />
+    <div className="bg-[url('/images/list_bg.jpg')] min-h-[100vh]">
+      <RouterProvider router={router} />
+    </div>
   )
 }
 
