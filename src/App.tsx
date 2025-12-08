@@ -1,15 +1,24 @@
 import './App.css'
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
+import HomePage from './pages/home';
+import DetailPage from './pages/detail';
 
 function App() {
-  
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "/detail",
+      element: <DetailPage />,
+    },
+  ]);
+
 
   return (
-    <body>
-  <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-    
+    <RouterProvider router={router} />
   )
 }
 
