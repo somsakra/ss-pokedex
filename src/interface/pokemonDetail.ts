@@ -1,11 +1,4 @@
 export interface IPokenmonDetailResponse {
-    count: number
-    next: string
-    previous: null
-    results: IPokemonDetail
-}
-
-export interface IPokemonDetail {
   abilities: Ability[]
   base_experience: number
   cries: Cries
