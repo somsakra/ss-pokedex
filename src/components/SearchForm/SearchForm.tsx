@@ -1,7 +1,9 @@
 import { generationList, typesList, sortList } from "@/utils/optionList";
+import { userSearchForm } from "@/components/SearchForm";
 
 
 const SearchForm = () => {
+    const {fieldKeywork} = userSearchForm()
     return (
         <div className="grid grid-cols-4 gap-x-[20px]">
             <div>
@@ -33,7 +35,7 @@ const SearchForm = () => {
 
             <div>
                 <label htmlFor="search" className="block mb-2 text-white font-medium">Search</label>
-                <input id="search" className="block w-full p-2.5 bg-[#253641] border border-gray-300 text-white text-sm rounded-lg focus:ring-[#3C5BAA] focus:border-[#3C5BAA]">
+                <input {...fieldKeywork} id="search" className="block w-full p-2.5 bg-[#253641] border border-gray-300 text-white text-sm rounded-lg focus:ring-[#3C5BAA] focus:border-[#3C5BAA]">
                 </input>
             </div>
 
