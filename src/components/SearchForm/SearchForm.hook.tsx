@@ -22,8 +22,10 @@ const userSearchForm = () => {
                 pokemonList.push(pokemonData)
             }
             setFetchPokemonList({ data: pokemonList, loading: false, error: null })
+            setPokemonList({ data: pokemonList, loading: false, error: null })
         } else {
             setFetchPokemonList({data:[],loading:false, error: PokemonListresponse.error })
+            setPokemonList({data:[],loading:false, error: PokemonListresponse.error })
         }
         
     }
