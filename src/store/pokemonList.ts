@@ -15,7 +15,7 @@ const initialStore = {
 }
 
 type pokemonType = {
-    data: IPokenmonDetailResponse[],
+    data: (IPokenmonDetailResponse | undefined)[],
     loading: boolean,
     error: null | any
 }
